@@ -11,126 +11,131 @@
     <link rel="stylesheet" href="fonts/css/all.css"/> 
 </head>
 <body>
-    <header>
+    <header id="home">
         <div class="wrapper">
             <nav>
-                <ul class="mainMenu clearfix">
+                <label for="toggle"><i class="fa fa-bars"></i></label>
+                <input type="checkbox" id="toggle" name="toggle">
+                <ul class="main-menu clearfix">
                     <li><a href="#home">home</a></li>
-                    <li><a href="#shop">about</a></li>
+                    <li><a href="#about">about</a></li>
                     <li><a href="#blog">blog</a></li>
                     <li><a href="#contact">contact</a></li>
                 </ul> 
             </nav>
-            <div class="headerContainer clearfix">
+            <div class="header-container clearfix">
                 <h1>
                     animal <span>refuge</span> 
                 </h1>
-                <ul class="headerIcons">
+                <ul class="header-icons">
                     <li><a href="http://instagram.com"><i class="fab fa-instagram"></i></a></li>
                     <li><a href="http://facebook.com"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="http://snapchat.com"><i class="fab fa-snapchat"></i></a></li>
+                    <li><a href="http://snapchat.com"><i class="fab fa-snapchat-ghost"></i></a></li>
                     <li><a href="http://twitter.com"><i class="fab fa-twitter"></i></a></li>
                 </ul>
-
             </div>
         </div>
     </header>
     <main>
-    <section class="suzie clearfix ">
-        <div class="wrapper clearfix">
-        <img src="assets/image-6.jpg" alt="">
-        <div class="suzieContent">
-        <h2>suzie's story</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolorem itaque neque fugit similique sapiente, debitis nulla in tempora officiis nesciunt ut necessitatibus cumque recusandae quo nemo nam assumenda quas cupiditate veniam, inventore est facilis qui laborum. Dolore, autem laborum quos earum facere tempore accusamus sed veritatis cumque modi dolor!</p>
-        <button>read more</button>
-    </div>
-    </div>
-    </section>
-    <section class="ourFriends">
-        <div class="wrapper">
-        <h2>Some Of Our <span>Friends</span> </h2>
-       <ul class="clearfix gallery">
-        <li><img src="./assets/image-5.jpg" alt=""></li>
-        <li><img src="./assets/image-4.jpg" alt=""></li>
-        <li><img src="./assets/image-3.jpg" alt=""></li>
-       </ul>
-    </div>
-    </section>
-    <section class="moreInfo">
-        <div class="wrapper">
-        <ul class="clearfix">
-            <li>
-                <i class="fas fa-paw"></i>
-                <p>Animal <span>Spotlight</span> </p>
-            </li>
-            <li>
-                <i class="fas fa-calendar-check"></i>
-                <p>Events</p>
-             </li>
-            <li>
-                <i class="fas fa-shopping-bag"></i>
-                <p>Merch</p>
-            </li>
-        </ul>
-    </div>
-    </section>
-    <section class="blog">
-        
-        <ul class="clearfix">
-            <div class="wrapper">
-            <li class="blogContent">
-                <h3>Facinating facts  <span> about zebras</span> </h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolorem itaque neque fugit similique sapiente, debitis nulla in tempora officiis nesciunt ut necessitatibus cumque recusandae quo nemo nam . </p>
-                <button>read more</button>
-            </li>
-        </div>
-            <li>   
-                <img src="./assets/zebra-missing.jpg" alt="">
-            </li>
-        
-        
-            <li>
-                <img src="./assets/image-2.jpg" alt="">
-            </li>
-            <div class="wrapper">
-            <li>
-                <div class="blogContent2">
-                <h3>the Bond between animals and humans</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolorem itaque neque fugit similique sapiente, debitis nulla in tempora officiis nesciunt ut necessitatibus cumque recusandae quo nemo nam. </p>
-                <button>read more</button>
+        <section id="about" class="suzie clearfix ">
+            <div class="wrapper clearfix">
+                <img src="assets/image-6.jpg" alt="kitty looking with green eyes">
+                <div class="suzie-content">
+                <h2>suzie's story</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolorem itaque neque fugit similique sapiente, debitis nulla in tempora officiis nesciunt ut necessitatibus cumque recusandae quo nemo nam assumenda quas cupiditate veniam, inventore est facilis qui laborum. Dolore, autem laborum quos earum facere tempore accusamus sed veritatis cumque modi dolor!</p>
+                <div class="suzie-button">
+                    <button>read more</button>
+                </div>
             </div>
-            </li>
-        </div>
-        </ul>
-    
-    </section>
-    <section class="contact">
-        <div class="wrapper">
-            <ul>
-                <li>
-                    <ul>
-                        <li>Home</li>
-                        <li>Blog</li>
-                        <li>Gallery</li>
-                        <li>Contact</li>
-                    </ul>
+        </section>
+        <section class="our-friends">
+            <div class="wrapper">
+                <h2>Some Of Our <span>Friends</span> </h2>
+                <ul class="clearfix gallery">
+                    <li><img src="./assets/image-5.jpg" alt="chameleon on the tree"></li>
+                    <li><img src="./assets/image-4.jpg" alt="sheep staring at the screen"></li>
+                    <li><img src="./assets/image-3.jpg" alt="parrot on the tree"></li>
+                </ul>
+            </div>
+        </section>
+        <section id="about" class="more-info">
+            <div class="wrapper">
+                <ul class="clearfix">
+                    <li>
+                        <i class="fas fa-paw"></i>
+                        <p>Animal <span>Spotlight</span> </p>
+                    </li>
+                    <li>
+                        <i class="fas fa-calendar-check"></i>
+                        <p>Events</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-shopping-bag"></i>
+                        <p>Merch</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="blog" class="blog">
+            <ul class="clearfix">
+                <li class="blog-content">
+                    <div class="wrapper">
+                        <h3>Facinating facts  <span> about zebras</span> </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolorem itaque neque fugit similique sapiente, debitis nulla in tempora officiis nesciunt ut necessitatibus cumque recusandae quo nemo nam . </p>
+                        <button>read more</button>
+                    </div>
                 </li>
-                <li>
-                    <h4></h4>
-                    <p></p>
-                    <input type="email">
+                <li >   
+                    <img class="img-one" src="./assets/zebra-missing.jpg" alt="two zebras which one of them look at the screen">
                 </li>
-                <li>
-                    <h4></h4>
-                    <p></p>
-                    <form action="#" method="#" class="myForm" name="myForm">
-                        <input type="email" id="yourEmail" name="emailAddress" placeholder="email address">
-                        <button type="submit"> subscribe</button>
-                    </form>
+                <li >
+                    <img class="img-two" src="./assets/image-2.jpg" alt="kitty is playing">
+                </li>
+                <li  class="blog-content2">
+                    <div class="wrapper">
+                        <h3>the Bond between animals and humans</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolorem itaque neque fugit similique sapiente, debitis nulla in tempora officiis nesciunt ut necessitatibus cumque recusandae quo nemo nam. </p>
+                        <button>read more</button>
+                    </div>
                 </li>
             </ul>
-        </div>
-    </section>
+        </section>
+        <section id="contact" class="contact">
+            <div class="wrapper">
+                <ul class="clearfix">
+                    <li class="contact-container contact-nav">
+                        <ul>
+                            <li> <a href="#home">Home</a></li>
+                            <li> <a href="#blog">Blog</a></li>
+                            <li> <a href="#gallery">Gallary</a></li>
+                            <li> <a href="#contact">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li class="contact-container mid-contact">
+                        <h4>Stay Updated</h4>
+                        <p> subscribe to our newsletter to stay updated.</p>
+                        <form action="#" method="#" class="myForm" name="myForm">
+                            <textarea name="emailAddress" id="yourEmail">email address</textarea>
+                            <button type="submit"> subscribe</button>
+                        </form>
+                    </li>
+                    <li class="contact-container address">
+                        <h4>Contact</h4>
+                        <p>info@email.com|123-456-7890
+                            <span>123 some road , Toronto ,ON</span>
+                            <span>A5A 5A5,Canada</span>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
 </main>
+<footer>
+    <div class="wrapper">
+        <p>
+            Copyright <i class="far fa-copyright"></i> 2019 HackerYou
+        </p>
+    </div>
+</footer>
 </body>
 </html>

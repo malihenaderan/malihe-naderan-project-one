@@ -13,8 +13,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 	background: white;
 	color: black;
   }
-  
-  .skip-link:focus {
+.skip-link:focus {
 	left: 0;
   }
 html {
@@ -22,6 +21,7 @@ html {
 }
 body{
 	font-family: 'Roboto' ;
+	background-color: black;
 	font-size: 2rem;
 	line-height: 2.9rem;;
 	-webkit-font-smoothing: antialiased;
@@ -65,81 +65,84 @@ header{
     background-repeat: no-repeat;
 	width: 100%;
 	position: relative;
+	background-position: 30% 50%;
 }
 nav{
 	height: 10vh;
 }
-.mainMenu{
+.main-menu{
 	color: white;
 }
-.mainMenu li {
+.main-menu li {
 	position: relative;
 	float: left;
 	font-size: 2rem;
 	text-transform: uppercase;
 }
-.mainMenu li a {
-    padding: 10px 20px;
+.main-menu li a {
+    padding: 20px;
     display: inline-block;
     margin-top:20px;
 }
-
-.headerContainer h1{
+nav .fa{
+    position: absolute;
+    top:20px;
+    right:20px;
+	font-size: 30px;
+	color: white;
+    display: none;
+}
+input[type="checkbox"] {
+	display: none; 
+}
+.header-container h1{
 	font-family: 'Fredericka the Great';
 	font-size: 12rem;
 	color:white;
 	text-transform: uppercase;
 	float:right;
 	line-height: 117px;
-	
 }
-.headerContainer h1 span{
+.header-container h1 span{
 	display: block;
 }
-.mainMenu li a:hover{
+.main-menu li a:hover{
    background-color: black;
 }
-
-.headerIcons{
+.header-icons{
    position: absolute;
    bottom: 20px;
    right:20px;
    color: white;
    font-size: 20px;
-     
 }
-.headerIcons li{
+.header-icons li{
 padding:10px;
-    
 }
-.headerIcons li a:hover{
+.header-icons li a:hover{
     color:#000;
 }
 .suzie{
-	
 	background-color: #152D20;
 	padding:50px 0;
-	
 }
 .suzie img{
 	width: 300px;
 	float: left;
-	
 }
-.suzieContent{
-	padding-left:50px;
+.suzie-content{
+	padding-left: 50px;
+	width:calc(100% - 300px);
+	float:left;
 }
 .suzie h2,
-.ourFriends h2
-
-{
+.our-friends h2{
 	font-size: 5.1rem;
 	font-family: 'Fredericka the Great';
 	line-height: 50px;
 	color: white;
 	text-transform: uppercase;
 	padding:50px 0 20px;
-	
 }
 .blog h3{
 	font-size: 3.5rem;
@@ -150,37 +153,30 @@ padding:10px;
 }
 .blog h3 span{
 	display: block;
-	
 }
 .suzie h2{
 	padding:0 ;
 }
-
-.ourFriends h2{
+.our-friends h2{
 	color:black;
 	text-align: center;
 }
-.ourFriends{
-	
+.our-friends{
 	background-color:#C3D3CB ;
 }
-.ourFriends span{
+.our-friends span{
 	display:block;
-	
 }
-
 .suzie p{
 	padding-top:30px;
 	color:#C3D3CB;
 }
-
 .blog p{
 	color:gray;
 	padding-top: 20px;
 }
 .suzie button,
 .blog button{
-	
 	text-transform: uppercase;
 	font-size: 18px;
 	font-family: 'Cormorant Garamond' ;
@@ -188,61 +184,69 @@ padding:10px;
 	margin-top: 40px;
 	height:50px;
 	width: 140px;
+	border:none;
 }
-.suzieContent{
-	padding-left: 50px;
-	width:calc(100% - 300px);
-	float:left;
+.suzie button:hover{
+	background-color: #000;
+}
+.blog button:hover{
+	background-color: black;
+	border:2px solid white;
 }
 .gallery li,
-.moreInfo li{
+.more-info li{
 	float:left;
     margin-right: 20px;
     margin-bottom: 20px;
     width:calc((100% - 40px)/3);
 }
 .gallery li:nth-child(3),
-.moreInfo li:nth-child(3){
+.more-info li:nth-child(3){
     margin-right:0;
 }
 .gallery li img{
     display: block;
 }
-.moreInfo{
-	
+.more-info{
 	background-color: #152D20;
 	color:white;
 }
-.moreInfo li{
+.more-info li{
 	font-size: 35px;
 	text-align: center;
 	padding-top:50px;
 	text-transform: uppercase;
 }
-.moreInfo li span
+.more-info li span
 {
 	display: block;
 	padding-top: 20px;
 }
-.moreInfo i{
+.more-info i{
 	padding-bottom: 20px;
 }
-.moreInfo p{
+.more-info p{
 	padding-top: 10px;
 	font-family: 'Cormorant Garamond' ;
-	
 }
 .blog{
 	background-color: black;
 }
-
-.blog li{
+.blog-content,
+.blog-content2{
 	float: left;
-    width: 50%;
+	width: 50%;
+	height:400px;
+	padding-top: 50px;
+}
+.img-one,
+.img-two{
+	float:left;
+	height:400px;
+	width:50%;
 }
 .blog h2{
 	color:#152D20 ;
-
 }
 .blog button{
 	background-color: #152D20;
@@ -250,12 +254,261 @@ padding:10px;
 	border:none;
 	font-family: 'Cormorant Garamond' ;
 }
-.blogContent{
-	padding-right:50px;
-	padding-top: 100px;
+.contact{
+	background-color:#152D20  ;
+	color:white;
 }
-.blogContent2{
-	padding-left: 50px;
-	padding-top: 100px;
+.contact-container{
+	float:left;
+	padding:100px 0;
 }
-
+.contact h4,
+.contact-nav{
+	font-family: 'Cormorant Garamond' ;
+	font-size: 2.2rem;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.contact-nav{
+	width:15%;
+}
+.contact-nav li a:hover{
+    color: black;
+}
+.contact-container h4{
+	padding-bottom: 15px;
+}
+.contact-container span{
+	display: block;
+}
+.address{
+	width:25%;
+	font-size: 1.8rem;
+	text-align: right;
+}
+.mid-contact{
+	text-align: center;
+	width:60%;
+}
+.contact-container textarea{
+	width:400px;
+	height:50px;
+	padding:10px 20px;
+	font-family: 'Roboto' ;
+	color:#C3D3CB;
+	resize: none;
+	box-sizing: border-box;
+}
+.contact-container p{
+	padding-bottom: 15px;
+}
+.contact-container button{
+	height:50px;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-family: 'Cormorant Garamond' ;
+	background-color: black;
+	color:white;
+	border:none;
+	width:150px;
+}
+footer{
+	background-color: black;
+	color:white;
+	text-align: center;
+	padding:20px 0;
+}
+footer i{
+	font-size: 1.5rem;
+}
+@media only screen and (max-width: 1100px){
+	.wrapper{
+		width:90%
+	}
+	body{
+		font-size: 1.6rem;
+	}
+	.address{
+		font-size: 1.5rem;
+	}
+	.blog button{
+		margin-top:15px;
+	}
+	.blog h3{
+		font-size: 3rem;
+	}
+	.contact-container button{
+		width:400px;
+		margin-top:10px;
+	}
+}
+@media only screen and (max-width: 940px){
+	.header-container h1{
+		float: left;
+		font-size: 6rem;
+		line-height: 70px;
+		width: 50%;
+	}
+	.address{
+		font-size: 1.4rem;
+	}
+}
+@media only screen and (max-width: 890px){
+	.blog-content{
+		float: left;
+		width: 100%;
+		height:400px;
+		margin-top: 400px;
+	}
+	.blog .img-one{
+		float:right;
+		height:400px;
+		width: 100%;
+		margin-left: -100%;
+	}
+	.blog-content2,
+	.img-two{
+		float: left;
+		width: 100%;
+		height:400px;
+	}
+	.blog-content,
+	.blog-content2{
+		background-color: white;
+		text-align: center;
+	}
+	.contact-nav ul li{
+		float:left;
+		width:25%;
+		text-align: center;
+	}
+	.contact-nav{
+		width: 100%;
+	}
+	.address{
+		width:30%;
+	}
+	.mid-contact{
+		
+		width:70%;
+	}
+	.contact-container{
+		padding:50px 0;
+	}
+}
+@media only screen and (max-width: 890px){
+	.mid-contact{
+		
+		width:100%;
+	}
+	.address{
+		width:100%;
+		text-align: center;
+	}
+	.contact-container{
+		padding:25px 0;
+	}
+}
+@media only screen and (max-width: 710px){
+	.suzie img{
+		width: 100%;
+		padding:50px;
+	}
+	.suzie-content{
+		width:100%;
+	}
+	.suzie-button{
+		text-align: center;
+	}
+}
+@media only screen and (max-width: 620px){
+	.gallery li{
+		width:calc((100% - 20px)/2);
+	}
+	.gallery li:nth-child(2){
+		margin-right:0;  
+	}
+	.gallery li:last-child{
+		display:none;
+	}
+	.more-info li{
+		float:none;
+		text-align: center;
+		width:100%;
+	}
+	.more-info{
+		padding-bottom: 20px;
+	}
+	.contact-nav{
+		font-size: 1.6rem;
+	}
+}
+@media only screen and (max-width: 450px){
+	.header-container h1{
+		font-size: 3rem;
+		line-height: 30px;
+		margin-top: -40px;
+	}
+	.header-icons{
+		display:none;
+	 }
+	.main-menu {
+        float:none;
+        position: fixed;
+        width: 50%;
+        left:-50%; 
+		top: 0;
+		padding:0;
+		margin:0;
+        z-index: 10;
+        transition: all 0.5s; 
+        background-color: #000;
+		color: #fff;
+		height: 100%;
+    }
+    input[type=checkbox]:checked + .main-menu {
+        left:0;
+		} 
+		nav .fa{
+			display:inline-block
+		}
+    .main-menu li{
+        display: inline-block;
+        font-size: 25px;
+        border-bottom: 1px solid grey;
+        width: 100%;
+        height: 15%;
+        text-align: center;
+	    transition: all 0.3s;
+	}
+	.main-menu li a {
+		padding:20px;
+	}
+	.main-menu li:hover{
+        background-color: gray;
+    }
+	label[for="toggle"] {
+        display: inline-block;
+        position: fixed;
+        top: 25px;
+        right: 20px;
+        color:#000;
+        z-index: 10;
+	}
+	.contact-container textarea,
+	.contact-container button{
+		width:350px;
+	}
+	.contact{
+		margin-top: 50px;
+	}
+}
+@media only screen and (max-width: 390px){
+	.contact-container textarea,
+	.contact-container button{
+		width:320px;
+	}
+	.contact-nav{
+		font-size: 1.4rem;
+	}
+}
